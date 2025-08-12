@@ -34,19 +34,19 @@ To get Xcode, you can download it from the app store on your devide. Swift and S
 
 ### Chapter 3 - Start a New Xcode Project
 
-(add xcode start image)
+<img alt="Xcode start" src="image-assets/xcode-start.png">
 
 To start a new Xcode project, you can click `Create new project` or you can go to the toolbar at the top on the screen and do `File -> New -> Project...`. 
 
 After that, a window will apear where you can choose which operating system you want to build your app for.
 
-(add image of system choice window)
+<img alt="system choices" src="image-assets/system-choice.png">
 
 For this lesson, we will choose `IOS` and `App`.
 
 Next, you will be asked to provide information such as the name of your app, your organisation, etc,. 
 
-(Image of information)
+<img alt="app information" src="image-assets/app-info.png">
 
 We will come back to this is lesson 2. For now, we will call this app `L1 Demo`. We will use `SwiftUI` for our interface and `Swift` for our programming language.
 
