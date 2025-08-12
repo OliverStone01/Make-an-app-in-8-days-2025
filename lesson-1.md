@@ -34,19 +34,19 @@ To get Xcode, you can download it from the app store on your devide. Swift and S
 
 ### Chapter 3 - Start a New Xcode Project
 
-<img alt="Xcode start" src="image-assets/xcode-start.png">
+<img alt="Xcode start" src="image-assets/xcode-start.png" style="width:200px">
 
 To start a new Xcode project, you can click `Create new project` or you can go to the toolbar at the top on the screen and do `File -> New -> Project...`. 
 
 After that, a window will apear where you can choose which operating system you want to build your app for.
 
-<img alt="system choices" src="image-assets/system-choice.png">
+<img alt="system choices" src="image-assets/system-choice.png" style="width:200px">
 
 For this lesson, we will choose `IOS` and `App`.
 
 Next, you will be asked to provide information such as the name of your app, your organisation, etc,. 
 
-<img alt="app information" src="image-assets/app-info.png">
+<img alt="app information" src="image-assets/app-info.png" style="width:200px">
 
 We will come back to this is lesson 2. For now, we will call this app `L1 Demo`. We will use `SwiftUI` for our interface and `Swift` for our programming language.
 
@@ -58,6 +58,144 @@ And finally, we will need to choose a place to store our project. Here you can a
 
 ### Chapter 4 - Add images to the App Project 
 
+When your project loads, you will be the main code area in the center, a preview of the app on the right, to the far left are folders where the files and assets of the apps can be found.
+
+<img alt="Xcode main area" src="" style>
+
+To add an image to the project, we can take an image and place it inside of the `assets` library.
+
+<img alt="asset area" src="">
+
+If you wish to rename the image, you can click on the current file name in the image list and press enter to be given the opertunity to rename. 
+
+-----
+
+### Chapter 5 - Customising your App screen
+
+Now, click on `Content view` in the file exlorer on the left to go back to edit the view of the website. In the main section of code, we can place our code in the variable `body`:
+```
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+
+        // Your code here
+
+    }
+}
+
+#Preview {
+    ContentView()
+}
+```
+
+To make things easier to begin with, we are going to use the `element library` located in the top right of the editor. Here we can search for the element `image` inside of the `views library` and drag it into the `body`.
+```
+struct ContentView: View {
+    var body: some View {
+        
+        Image("Image Name")
+        
+    }
+}
+```
+
+Once placed, you must add the name of the image in the asset folder. Like such:
+```
+struct ContentView: View {
+    var body: some View {
+        
+        Image("field")
+        
+    }
+}
+```
+<img alt="raw image" src="">
+
+As you can see, the sizing and aspect ratio of the image is not quite right. What we can do is customise the image using the modifiers found in the `Modifier library`.
+
+We are going to use four modifiers on this image.
+- `.resizable()`: This tells the system that the image is able to be resizsed.
+- `.cornerRadius(10)`: This rounds the corners of the image.
+- `.aspectRatio(contentMode: .fit)`: This fixes the aspect ratio of the image and making it fit to the screen.
+- `.padding(.all)`: adds a padding around the entire image.000
+
+To add the modifier to the image, you can drag the modifier under the image like such:
+```
+struct ContentView: View {
+    var body: some View {
+        
+        Image("field")
+          .resizable()
+          .cornerRadius(10)
+          .aspectRatio(contentMode: .fit)
+          .padding(.all)
+        
+    }
+}
+```
+
+<img alt="image after adjustments" src="">
+
+What you will also notice is that when you click on the image tags, the right side of Xcode is the `inspector` where you are able to make fine adjustments to the elements.
+
+Now lets add some text below the image using the `text("Placeholder")` element.
+```
+struct ContentView: View {
+    var body: some View {
+        
+        Image("field")
+          .resizable()
+          .cornerRadius(10)
+          .aspectRatio(contentMode: .fit)
+          .padding(.all)
+
+        text("Placeholder")
+    }
+}
+```
+
+<img alt="Image with text" src="">
+
+We are going to use a `vertical stack` to stack the two elements on top of each other. To do this, we will plact the vertical stack and then place the current elements inside of the stack:
+```
+struct ContentView: View {
+    var body: some View {
+
+        VStack {
+          Image("field")
+            .resizable()
+            .cornerRadius(10)
+            .aspectRatio(contentMode: .fit)
+            .padding(.all)
+
+          text("Placeholder")
+        }
+    }
+}
+```
+
+Now lets change the text and how it looks by adding some modifiers to the elements:
+- `.font(.largeTitle)`: Changes the type of font and style
+- `.fontWeight(.semiBold)`: Changes the weight of the text
+```
+struct ContentView: View {
+    var body: some View {
+
+        VStack {
+          Image("field")
+            .resizable()
+            .cornerRadius(10)
+            .aspectRatio(contentMode: .fit)
+            .padding(.all)
+
+          text("Placeholder")
+            .font(.largeTitle)
+            .fontWeight(.semiBold)
+        }
+    }
+}
+```
 
 
 
