@@ -60,11 +60,11 @@ And finally, we will need to choose a place to store our project. Here you can a
 
 When your project loads, you will be the main code area in the center, a preview of the app on the right, to the far left are folders where the files and assets of the apps can be found.
 
-<img alt="Xcode main area" src="" style>
+<img alt="Xcode main area" src="image-assets/xcode-main-area.png">
 
 To add an image to the project, we can take an image and place it inside of the `assets` library.
 
-<img alt="asset area" src="">
+<img alt="asset area" src="image-assets/asset-area.png">
 
 If you wish to rename the image, you can click on the current file name in the image list and press enter to be given the opertunity to rename. 
 
@@ -110,7 +110,7 @@ struct ContentView: View {
     }
 }
 ```
-<img alt="raw image" src="">
+<img alt="raw image" src="image-assets/raw-image.png">
 
 As you can see, the sizing and aspect ratio of the image is not quite right. What we can do is customise the image using the modifiers found in the `Modifier library`.
 
@@ -135,7 +135,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="image after adjustments" src="">
+<img alt="image after adjustments" src="image-assets/image-with-adjustments.png">
 
 What you will also notice is that when you click on the image tags, the right side of Xcode is the `inspector` where you are able to make fine adjustments to the elements.
 
@@ -155,7 +155,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Image with text" src="">
+<img alt="Image with text" src="image-assets/image-with-text.png">
 
 We are going to use a `vertical stack` to stack the two elements on top of each other. To do this, we will plact the vertical stack and then place the current elements inside of the stack:
 ```
@@ -197,7 +197,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Edited text" src="">
+<img alt="Edited text" src="image-assets/edited-text.png">
 
 
 Lets now look at changing the background colour. To do this, we can add a `colour` element to the screen. We need to place this element at the top of the view. The issue is when we do this, the colour is placed over all elements in the view.
@@ -226,7 +226,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Background with safe areas" src="">
+<img alt="Background with safe areas" src="image-assets/background-with-safeareas.png">
 
 There are some colour preset colours you can use. To do this remove the RGB elements and type `.black` for example.
 
@@ -257,7 +257,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Background with no safe area" src="">
+<img alt="Background with no safe area" src="image-assets/background-adjusted.png">
 
 -----
 
@@ -265,7 +265,7 @@ struct ContentView: View {
 
 Lets first run this app inside of the IOS Simulator. To do this, you can select the device you want to test by choosing from the drop down menu at the top center of the screen:
 
-<img alt="Choosing device" src="">
+<img alt="Choosing device" src="image-assets/choosing-device.png">
 
 From there, we can press the run button in the top left corner of Xcode. Once this loads, you will have a virtual iphone running on your device with your app installed so you can test diffrent features like `shake`, change rotation, test screenshots, etc,.
 
