@@ -34,19 +34,19 @@ To get Xcode, you can download it from the app store on your devide. Swift and S
 
 ### Chapter 3 - Start a New Xcode Project
 
-<img alt="Xcode start" src="image-assets/xcode-start.png" style="width:200px">
+<img alt="Xcode start" src="image-assets/xcode-start.png" style="width:250px">
 
 To start a new Xcode project, you can click `Create new project` or you can go to the toolbar at the top on the screen and do `File -> New -> Project...`. 
 
 After that, a window will apear where you can choose which operating system you want to build your app for.
 
-<img alt="system choices" src="image-assets/system-choice.png" style="width:200px">
+<img alt="system choices" src="image-assets/system-choice.png" style="width:250px">
 
 For this lesson, we will choose `IOS` and `App`.
 
 Next, you will be asked to provide information such as the name of your app, your organisation, etc,. 
 
-<img alt="app information" src="image-assets/app-info.png" style="width:200px">
+<img alt="app information" src="image-assets/app-info.png" style="width:250px">
 
 We will come back to this is lesson 2. For now, we will call this app `L1 Demo`. We will use `SwiftUI` for our interface and `Swift` for our programming language.
 
@@ -60,11 +60,11 @@ And finally, we will need to choose a place to store our project. Here you can a
 
 When your project loads, you will be the main code area in the center, a preview of the app on the right, to the far left are folders where the files and assets of the apps can be found.
 
-<img alt="Xcode main area" src="image-assets/xcode-main-area.png">
+<img alt="Xcode main area" src="image-assets/xcode-main-area.png" style="width:250px">
 
 To add an image to the project, we can take an image and place it inside of the `assets` library.
 
-<img alt="asset area" src="image-assets/asset-area.png">
+<img alt="asset area" src="image-assets/asset-area.png" style="width:250px">
 
 If you wish to rename the image, you can click on the current file name in the image list and press enter to be given the opertunity to rename. 
 
@@ -110,7 +110,7 @@ struct ContentView: View {
     }
 }
 ```
-<img alt="raw image" src="image-assets/raw-image.png">
+<img alt="raw image" src="image-assets/raw-image.png" style="width:120px">
 
 As you can see, the sizing and aspect ratio of the image is not quite right. What we can do is customise the image using the modifiers found in the `Modifier library`.
 
@@ -135,7 +135,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="image after adjustments" src="image-assets/image-with-adjustments.png">
+<img alt="image after adjustments" src="image-assets/image-with-adjustments.png" style="width:120px">
 
 What you will also notice is that when you click on the image tags, the right side of Xcode is the `inspector` where you are able to make fine adjustments to the elements.
 
@@ -155,7 +155,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Image with text" src="image-assets/image-with-text.png">
+<img alt="Image with text" src="image-assets/image-with-text.png" style="width:120px">
 
 We are going to use a `vertical stack` to stack the two elements on top of each other. To do this, we will plact the vertical stack and then place the current elements inside of the stack:
 ```
@@ -197,7 +197,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Edited text" src="image-assets/edited-text.png">
+<img alt="Edited text" src="image-assets/edited-text.png" style="width:120px">
 
 
 Lets now look at changing the background colour. To do this, we can add a `colour` element to the screen. We need to place this element at the top of the view. The issue is when we do this, the colour is placed over all elements in the view.
@@ -226,7 +226,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Background with safe areas" src="image-assets/background-with-safeareas.png">
+<img alt="Background with safe areas" src="image-assets/background-with-safeareas.png" style="width:120px">
 
 There are some colour preset colours you can use. To do this remove the RGB elements and type `.black` for example.
 
@@ -257,7 +257,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Background with no safe area" src="image-assets/background-adjusted.png">
+<img alt="Background with no safe area" src="image-assets/background-adjusted.png" style="width:120px">
 
 -----
 
@@ -265,8 +265,9 @@ struct ContentView: View {
 
 Lets first run this app inside of the IOS Simulator. To do this, you can select the device you want to test by choosing from the drop down menu at the top center of the screen:
 
-<img alt="Choosing device" src="image-assets/choosing-device.png">
+<img alt="Choosing device" src="image-assets/choosing-device.png" style="width:300px">
 
 From there, we can press the run button in the top left corner of Xcode. Once this loads, you will have a virtual iphone running on your device with your app installed so you can test diffrent features like `shake`, change rotation, test screenshots, etc,.
 
 -----
+
