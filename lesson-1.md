@@ -191,13 +191,82 @@ struct ContentView: View {
 
           text("Placeholder")
             .font(.largeTitle)
-            .fontWeight(.semiBold)
+            .fontWeight(.semibold)
         }
     }
 }
 ```
 
+<img alt="Edited text" src="">
 
 
+Lets now look at changing the background colour. To do this, we can add a `colour` element to the screen. We need to place this element at the top of the view. The issue is when we do this, the colour is placed over all elements in the view.
 
+To prevent this, we can use a `zstack`. A `zstack` is a depth stack that allows you to stack elements on top of each other. In this example, we are going to stack all our other elements on top of the colour element so that it has the effect of a background.
+```
+struct ContentView: View {
+    var body: some View {
 
+        ZStack {
+
+            Color(red: 0.8, green: 0.8, blue: 0.8)
+
+            VStack {
+              Image("field")
+                .resizable()
+                .cornerRadius(10)
+                .aspectRatio(contentMode: .fit)
+                .padding(.all)
+
+              text("Placeholder")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+        }
+    }
+}
+```
+
+<img alt="Background with safe areas" src="">
+
+There are some colour preset colours you can use. To do this remove the RGB elements and type `.black` for example.
+
+The next issue is you can see white space at the top and bottom of the device where the background is not filling the screen. These areas are known as `safe areas`. This is typically where the time, cell service, battery, and WI-FI connectivity icons are and the bottom is where you swipe up to back to the home screen on the device.
+
+To allow the background to spread to these areas, we need to add a modifier to the background known as `.ignoreSafeArea()`.
+```
+struct ContentView: View {
+    var body: some View {
+
+        ZStack {
+
+            Color(red: 0.8, green: 0.8, blue: 0.8)
+                .ignoreSafeArea()
+
+            VStack {
+              Image("field")
+                .resizable()
+                .cornerRadius(10)
+                .aspectRatio(contentMode: .fit)
+                .padding(.all)
+
+              text("Placeholder")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+        }
+    }
+}
+```
+
+<img alt="Background with no safe area" src="">
+
+-----
+
+### Chapter 6 - Launch your App
+
+Lets first run this app inside of the IOS Simulator. To do this, you can select the device you want to test by choosing from the drop down menu at the top center of the screen:
+
+<img alt="Choosing device" src="">
+
+From there, we can press the run button in the top left corner of Xcode. Once this loads, you will have a virtual iphone running on your device with your app installed so you can test diffrent features like `shake`, change rotation, test screenshots, etc,.
+
+-----
