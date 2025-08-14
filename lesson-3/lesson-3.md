@@ -61,7 +61,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="image and text without modifiers" src="/lesson-3/image-assets/image-text-no-modifiers.png" style="">
+<img alt="image and text without modifiers" src="/lesson-3/image-assets/image-text-no-modifiers.png" style="width:140px">
 
 Now we have added our text, we want to left align everything in the VStack. To do this, we can click on the VStack and use the inspector panel on the right side of the screen and at the top is `Alignment`. Here we will choose the left most button. Next, we are going to add a spacing between each item in the VStack. Above `Alignment` in the inspector area, you will see `Spacing`. We will put 20 here to create the spacings.
 
@@ -109,7 +109,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="image and text with title modifications" src="/lesson-3/image-assets/image-text-with-modifiers.png" style="">
+<img alt="image and text with title modifications" src="/lesson-3/image-assets/image-text-with-modifiers.png" style="width:140px">
 
 -----
 
@@ -165,7 +165,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="four and a half stars added" src="/lesson-3/image-assets/four-half-stars.png" style="">
+<img alt="four and a half stars added" src="/lesson-3/image-assets/four-half-stars.png" style="width:140px">
 
 -----
 
@@ -208,7 +208,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="with middle spacing" src="/lesson-3/image-assets/four-half-stars-spacing.png" style="">
+<img alt="with middle spacing" src="/lesson-3/image-assets/four-half-stars-spacing.png" style="width:140px">
 
 Now we want to add some text below the starts to specify how many reviews have been left. To do this, we are going to nest another VStack inside of the HStack that puts the stars at the top and the text just below. The issue we run into is because the stars are now inside of a HStack, they now stack vertically, so we now need to add another HStack inside of the VStack we just made so that the stars can still be laid out horizontally.
 ```
@@ -248,7 +248,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Text with reviews" src="/lesson-3/image-assets/reviews.png" style="">
+<img alt="Text with reviews" src="/lesson-3/image-assets/reviews.png" style="width:140px">
 
 Now all we need to do for the stars and text is change the colour orange and make them a little smaller. To do this, we are going to use the modifier `.foregroundColor(.orange)` for the colour and then we are going to use the modifier `.font(.caption)` to make them a little smaller.
 
@@ -292,7 +292,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="orange stars and text" src="/lesson-3/image-assets/orange-reviews.png" style="">
+<img alt="orange stars and text" src="/lesson-3/image-assets/orange-reviews.png" style="width:140px">
 
 -----
 
@@ -378,8 +378,9 @@ struct ContentView: View {
 
 What we are going to do now is add a background to the entire view. To do this, we are going to use a `ZStack (Depth Stack)`. First, we will use the `colour()` element and then place the VStack we have been editing after to overlay it over the background.
 
-<img alt="Final" src="/lesson-3/image-assets/final.png" style="">
+<img alt="Final" src="/lesson-3/image-assets/final.png" style="width:140px">
 
 -----
+
 
 
