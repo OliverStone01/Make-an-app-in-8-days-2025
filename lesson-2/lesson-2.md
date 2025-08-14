@@ -6,7 +6,7 @@ Today we are going to look more around Xcode and the its interface.
 
 When starting a new project, you are given lots of different templates and platforms to choose from. For now, we will continue with IOS apps. Once you select this option, the following box will appear:
 
-<img alt="Options panel" src="">
+<img alt="Options panel" src="/lesson-2/image-assets/app-info.png">
 
 - **Product name**: name of your app
 - **Team**: How you code sign your app
@@ -35,7 +35,7 @@ There are five main areas of Xcode:
 - **Toolbar**: Top of the screen
 - **Debug area**: Bottom part of the screen
 
-<img alt="Xcode main page" src="">
+<img alt="Xcode main page" src="/lesson-2/image-assets/xcode-main-area.png">
 
 #### Navigator area 
 
