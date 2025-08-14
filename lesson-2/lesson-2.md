@@ -58,24 +58,67 @@ There is also the identity tab that displays where this element is being used an
 As you will notice, there is a cascading effect going on where if you change something on the left side of the screen (changing file for example) then the editor area changes in which changes the utility area.
 
 
+-----
+
+### The Xcode toolbar
+
+The left most button hides the navigator area incase you need more space. The button on the far right does the same for the inspectors area.
+
+Second from the left is the `run` button that allows you to run your app in a simulated enviroment.
+
+In the center is where you are able to choose which device your app is simulated on. If you plug in your own device to your computer, you will also see an option to use that device.
+
+To the right of this is a status bar that tells you what is happening behind the scenes.
+
+Next is a button that allows you to run the test cases that we could of created when initialising the project. These tests are run of the cloud. 
+
+Next is the library button that contains elements and modifiers that you can drag and drop onto the view.
 
 
+-----
+
+### What is an Xcode project?
+
+Looking at the navigator area, lets take a closer look at the files that make up your project. At the top is the root node of your project. This is where you are able to configure your applications name and IOS versions. This is where you can also configure in-app purchases. 
+
+After that, there is a folder that contains the files to your application. The first is the enrty point which initialises your app and begins to display the `ContentView` file. This file is where the first page in your app. 
+
+Next is your asset library, Here is where all your image assets, colours, and your app icon is kept.
+
+Finally is preview content. This is where you can submit images or other assets for testing in the preview section. 
 
 
+-----
+
+### The IOS Simulator
+
+What you can do is select the device you want to simulate from the center on the tool bar and press the start button to begin simulating your app. You can simulate test and other features. 
 
 
+-----
+
+### The preview area 
+
+Here is where you can preview your app as you are building it. As you add elements and modifiers, you will see your app being updated in real time. You can also test `dark` mode and `light` mode options. You can also look at orientation and diffrent font sizes.
+
+If you are in live view, you are able to interact with some elements like buttons for example. The next option is select mode. This allows you to select items in the preview and it will highlight that element in the editor area. 
 
 
+-----
+
+### Tips for Xcode
+
+At the top of the editor area, there are arrows beside the breadcrum. This allows you to go back and forward to your previous location. 
+
+To the right side of the editor area tool bar, is a button that allows you to remove the preview or add other similar features like add a minimap that allows you to see an overview of your code.
+
+You can look at two files at the same time in the editor area by using the furthers right button in the editor area toolbar.
 
 
+-----
 
+### The developer documentation
 
+If you are unsure what an element does, you can go to `windows` in the top toolbar and `Developer Documentation` and search for the element in here and it will give you information about said element.
 
-
-
-
-
-
-
-
-
+-----
