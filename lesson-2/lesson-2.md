@@ -6,7 +6,7 @@ Today we are going to look more around Xcode and the its interface.
 
 When starting a new project, you are given lots of different templates and platforms to choose from. For now, we will continue with IOS apps. Once you select this option, the following box will appear:
 
-<img alt="Options panel" src="/lesson-2/image-assets/app-info.png">
+<img alt="Options panel" src="/lesson-2/image-assets/app-info.png" style="width:300px">
 
 - **Product name**: name of your app
 - **Team**: How you code sign your app
@@ -35,7 +35,7 @@ There are five main areas of Xcode:
 - **Toolbar**: Top of the screen
 - **Debug area**: Bottom part of the screen
 
-<img alt="Xcode main page" src="/lesson-2/image-assets/xcode-main-area.png">
+<img alt="Xcode main page" src="/lesson-2/image-assets/xcode-main-area.png" style="width:300px">
 
 #### Navigator area 
 
@@ -122,4 +122,5 @@ You can look at two files at the same time in the editor area by using the furth
 If you are unsure what an element does, you can go to `windows` in the top toolbar and `Developer Documentation` and search for the element in here and it will give you information about said element.
 
 -----
+
 
