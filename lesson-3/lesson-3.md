@@ -202,11 +202,6 @@ struct ContentView: View {
                 Image(systemName: "star.leadinghalf.filled")
 
             }
-
-            Text("Fields")
-                .font(.title)
-                .fontWeight(.bold)
-
             Text("Come and visit the most beautiful view.")
 
     }
@@ -246,10 +241,6 @@ struct ContentView: View {
                     Text("Reviews 361")
                 }
             }
-
-            Text("Fields")
-                .font(.title)
-                .fontWeight(.bold)
 
             Text("Come and visit the most beautiful view.")
 
@@ -294,10 +285,6 @@ struct ContentView: View {
                 .foregroundColor(.orange)
                 .font(.caption)
             }
-
-            Text("Fields")
-                .font(.title)
-                .fontWeight(.bold)
 
             Text("Come and visit the most beautiful view.")
 
@@ -345,13 +332,10 @@ struct ContentView: View {
                 .font(.caption)
             }
 
-            Text("Fields")
-                .font(.title)
-                .fontWeight(.bold)
-
             Text("Come and visit the most beautiful view.")
 
             HStack {
+                spacer()
                 Image(systemName: "fork.knife")
                 Image(systemName: "binoculars.fill")
             }
@@ -394,5 +378,8 @@ struct ContentView: View {
 
 What we are going to do now is add a background to the entire view. To do this, we are going to use a `ZStack (Depth Stack)`. First, we will use the `colour()` element and then place the VStack we have been editing after to overlay it over the background.
 
+<img alt="Final" src="" style="">
+
 -----
+
 
