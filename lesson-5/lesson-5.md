@@ -14,11 +14,11 @@ Xcode playgrounds, which comes with Xcode, is a lightweight way for us to practi
 
 A window will pop up asking you to choose a template to use:
 
-<img alt="Template Window" src="/lesson-5/image-assets/template.png" style="width:150px">
+<img alt="Template Window" src="/lesson-5/image-assets/template.png" style="width:200px">
 
 We are going to choose `IOS` at the top, then we are going to choose blank which is the most basic template.
 
-<img alt="Playground main" src="/lesson-5/image-assets/main.png" style="width:150px">
+<img alt="Playground main" src="/lesson-5/image-assets/main.png" style="width:200px">
 
 
 -----
@@ -108,3 +108,4 @@ let greeting:String = "Hello, Playground"
 
 
 -----
+
