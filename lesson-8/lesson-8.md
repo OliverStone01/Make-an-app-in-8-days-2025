@@ -1,4 +1,4 @@
-## 📱 Creating the Logic
+ ## 📱 Creating the Logic
 
 At the moment, when we press the deal button, our app is printing `deal cards` in the console. What we want to make happen in this lesson is randomly pick cards for both the player and the user. Then, depending on who has the higher card gets the point.
 
@@ -32,6 +32,7 @@ func deal() {
     playerCard = "card" + String(Int.random(in: 2...14))
 
     // Randomise cpu card
+    cpuCard = "card" + String(Int.random(in: 2...14))
 
     // Update the scores
 }
@@ -55,30 +56,22 @@ Now we need to look at how we can choose who won the point. To do this, we are g
 ```
 func deal() {
     // Randomise players card
-    playerCard = "card" + String(Int.random(in: 2...14))
+    var playerCardValue = Int.random(in: 2...14)
+    playerCard = "card" + String(playerCardValue)
 
     // Randomise cpu card
-    cpuCard = "card" + String(Int.random(in: 2...14))
+    var cpuCardValue = Int.random(in: 2...14)
+    cpuCard = "card" + String(cpuCardValue)
 
     // Update the scores
-    if 
+    if playerCardValue > cpuCardValue {
+        playerScore += 1
+    }
+    else if playerCardValue < cpuCardValue {        
+        cpuScore += 1
+    }
 }
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-----
