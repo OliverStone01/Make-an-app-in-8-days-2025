@@ -1,6 +1,6 @@
 ## ⚔️ Build a War Card Game App
 
-In todays lesson, we are going to build the UI for the app and in the next lesson, we are going to build the logic and the code for the app.
+In today's lesson, we are going to build the UI for the app and in the next lesson, we are going to build the logic and the code for the app.
 
 -----
 
@@ -13,7 +13,7 @@ We are going to select app form the IOS templates and call our app `War Card Gam
 
 ### Chapter 2: Add Image Assets
 
-Download the images from the description of the video to get the image assets. Once downloaded, you can drag all 4 folders into xcode and it will respect the folders and keep them in the current order. The images are also `SVG (Scalable Vector Graphics)` so that the images can be resized without causing any quality loss.
+Download the images from the description of the video to get the image assets. Once downloaded, you can drag all 4 folders into Xcode and it will respect the folders and keep them in the current order. The images are also `SVG (Scalable Vector Graphics)` so that the images can be resized without causing any quality loss.
 
 
 -----
@@ -83,7 +83,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="My UI" src="/lesson-4/image-assets/my-attempt.png" style="width=170px">
+<img alt="My UI" src="/lesson-4/image-assets/my-attempt.png" style="width:170px">
 
 
 -----
@@ -158,6 +158,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Final UI" src="/lesson-4/image-assets/final.png" style="width=170px">
+<img alt="Final UI" src="/lesson-4/image-assets/final.png" style="width:170px">
 
 -----
+
