@@ -83,7 +83,7 @@ struct ContentView: View {
 }
 ```
 
-<img alt="My UI" src="" style="">
+<img alt="My UI" src="/lesson-4/image-assets/my-attempt.png" style="width=170px">
 
 
 -----
@@ -158,6 +158,6 @@ struct ContentView: View {
 }
 ```
 
-<img alt="Final UI" src="" style="">
+<img alt="Final UI" src="/lesson-4/image-assets/final.png" style="width=170px">
 
 -----
